@@ -110,15 +110,12 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-j> <C-w>j
 
 " Jump between methods
-nnoremap [[ <Action>(MethodUp)
-nnoremap ]] <Action>(MethodDown)
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>
 
 " Easy visual indentation
 vnoremap < <gv
 vnoremap > >gv
-
-" Execute macro saved in 'q' register
-nnoremap qj @q
 
 " Popup navigation
 inoremap <C-j> <Action>(PopupMenu-selectNext)
